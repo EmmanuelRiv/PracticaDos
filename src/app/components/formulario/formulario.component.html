@@ -1,0 +1,25 @@
+<div>
+  <div class="container " >
+    <div class="form-group"> 
+        <label >Nombre:</label>
+        <input type="text" class="form-control"  aria-describedby="helpId" 
+         required name="" placeholder="nombre" [(ngModel)]="perfiles.nombre">
+    </div>    
+   <div class="form-group"> 
+        <label for="usuario">usuario:</label>
+        <input type="text" class="form-control" id="usuario" aria-describedby="helpId" name=""
+        placeholder="usuario"[(ngModel)]="perfiles.usuario">
+    </div>                    
+    <div class="form-group"> 
+        <label for="Telefono">Telefono:</label>
+        <input type="text" class="form-control"
+        id="Telefono" aria-describedby="helpId" name="" placeholder="Telefono"[(ngModel)]="perfiles.telefono">
+    </div>    
+   
+    <div class="form-group"> <!-- direccion-->
+   <label for="Direccion">Direccion:</label>
+   <input  class="form-control" id="Direccion" aria-describedby="helpId" name="" 
+   placeholder="Direccion"[(ngModel)]="perfiles.direccion">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="Submit()">Agregar</button>
+  </div>
